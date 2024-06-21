@@ -1,0 +1,161 @@
+[2024-06-11T21:28:14.558+0000] {processor.py:161} INFO - Started process (PID=170) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:28:14.562+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:28:14.572+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:28:14.569+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:28:14.772+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:28:15.490+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:28:15.489+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:28:15.813+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 1.290 seconds
+[2024-06-11T21:28:46.174+0000] {processor.py:161} INFO - Started process (PID=211) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:28:46.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:28:46.182+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:28:46.181+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:28:46.248+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:28:46.385+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:28:46.383+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:28:46.543+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.382 seconds
+[2024-06-11T21:28:55.429+0000] {processor.py:161} INFO - Started process (PID=233) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:28:55.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:28:55.436+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:28:55.435+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:28:55.498+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:28:55.583+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:28:55.582+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:28:55.633+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:28:55.632+0000] {dag.py:3954} INFO - Setting next_dagrun for load_data_mb to 2024-06-10 00:00:00+00:00, run_after=2024-06-11 00:00:00+00:00
+[2024-06-11T21:28:55.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.294 seconds
+[2024-06-11T21:28:57.742+0000] {processor.py:161} INFO - Started process (PID=241) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:28:57.743+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:28:57.746+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:28:57.745+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:28:57.816+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:28:57.947+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:28:57.946+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:28:58.063+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.331 seconds
+[2024-06-11T21:29:28.295+0000] {processor.py:161} INFO - Started process (PID=278) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:29:28.297+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:29:28.300+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:29:28.299+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:29:28.341+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:29:28.419+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:29:28.419+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:29:28.500+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.216 seconds
+[2024-06-11T21:29:59.000+0000] {processor.py:161} INFO - Started process (PID=318) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:29:59.003+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:29:59.007+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:29:59.006+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:29:59.051+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:29:59.120+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:29:59.119+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:29:59.159+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:29:59.158+0000] {dag.py:3954} INFO - Setting next_dagrun for load_data_mb to 2024-06-10 00:00:00+00:00, run_after=2024-06-11 00:00:00+00:00
+[2024-06-11T21:29:59.196+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.211 seconds
+[2024-06-11T21:30:29.369+0000] {processor.py:161} INFO - Started process (PID=364) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:30:29.372+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:30:29.379+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:30:29.378+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:30:29.423+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:30:29.534+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:30:29.534+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:30:29.732+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.378 seconds
+[2024-06-11T21:31:00.048+0000] {processor.py:161} INFO - Started process (PID=383) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:31:00.069+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:31:00.164+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:31:00.148+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:31:00.579+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:31:01.058+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:31:01.057+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:31:01.608+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:31:01.603+0000] {dag.py:3954} INFO - Setting next_dagrun for load_data_mb to 2024-06-10 00:00:00+00:00, run_after=2024-06-11 00:00:00+00:00
+[2024-06-11T21:31:02.251+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 2.297 seconds
+[2024-06-11T21:31:32.603+0000] {processor.py:161} INFO - Started process (PID=424) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:31:32.605+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:31:32.608+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:31:32.608+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:31:32.660+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:31:32.793+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:31:32.793+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:31:32.905+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.313 seconds
+[2024-06-11T21:32:03.020+0000] {processor.py:161} INFO - Started process (PID=463) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:03.023+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:32:03.027+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:03.026+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:03.069+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:03.127+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:03.126+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:32:03.161+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:03.161+0000] {dag.py:3954} INFO - Setting next_dagrun for load_data_mb to 2024-06-11 00:00:00+00:00, run_after=2024-06-12 00:00:00+00:00
+[2024-06-11T21:32:03.195+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.188 seconds
+[2024-06-11T21:32:13.134+0000] {processor.py:161} INFO - Started process (PID=468) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:13.136+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:32:13.138+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:13.138+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:13.200+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:13.258+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:13.258+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:32:13.293+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:13.293+0000] {dag.py:3954} INFO - Setting next_dagrun for load_data_mb to 2024-06-11 00:00:00+00:00, run_after=2024-06-12 00:00:00+00:00
+[2024-06-11T21:32:13.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.211 seconds
+[2024-06-11T21:32:38.538+0000] {processor.py:161} INFO - Started process (PID=479) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:38.540+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:32:38.545+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:38.544+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:38.579+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:38.572+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_data_mb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_data_mb.py", line 32
+    with DAG('load_data_mb', default_args=default_args, catchup=False, concurrency=1, max_active_runs=1) as dag:
+IndentationError: expected an indented block after 'if' statement on line 19
+[2024-06-11T21:32:38.581+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:38.634+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.105 seconds
+[2024-06-11T21:32:40.601+0000] {processor.py:161} INFO - Started process (PID=484) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:40.603+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:32:40.606+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:40.605+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:40.637+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:40.635+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_data_mb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_data_mb.py", line 32
+    with DAG('load_data_mb', default_args=default_args, catchup=False, concurrency=1, max_active_runs=1) as dag:
+IndentationError: expected an indented block after 'if' statement on line 19
+[2024-06-11T21:32:40.637+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:40.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.081 seconds
+[2024-06-11T21:32:43.795+0000] {processor.py:161} INFO - Started process (PID=489) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:43.797+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:32:43.803+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:43.802+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:43.839+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:43.837+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_data_mb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_data_mb.py", line 33
+    with DAG('load_data_mb', default_args=default_args, catchup=False, concurrency=1, max_active_runs=1) as dag:
+IndentationError: expected an indented block after 'if' statement on line 19
+[2024-06-11T21:32:43.841+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:43.903+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.122 seconds
+[2024-06-11T21:32:46.871+0000] {processor.py:161} INFO - Started process (PID=494) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:46.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:32:46.877+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:46.876+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:46.941+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:47.002+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:47.002+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:32:47.043+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:47.042+0000] {dag.py:3954} INFO - Setting next_dagrun for load_data_mb to 2024-06-11 00:00:00+00:00, run_after=2024-06-12 00:00:00+00:00
+[2024-06-11T21:32:47.085+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.228 seconds
+[2024-06-11T21:32:51.116+0000] {processor.py:161} INFO - Started process (PID=499) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:51.118+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:32:51.123+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:51.122+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:51.148+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:51.146+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_data_mb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_data_mb.py", line 34
+    with DAG('load_data_mb', default_args=default_args, catchup=False, concurrency=1, max_active_runs=1) as dag:
+IndentationError: expected an indented block after 'if' statement on line 19
+[2024-06-11T21:32:51.149+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:51.213+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.114 seconds
+[2024-06-11T21:32:53.131+0000] {processor.py:161} INFO - Started process (PID=504) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:53.133+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:32:53.138+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:53.137+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:53.197+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:32:53.254+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:53.254+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:32:53.287+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:32:53.287+0000] {dag.py:3954} INFO - Setting next_dagrun for load_data_mb to 2024-06-11 00:00:00+00:00, run_after=2024-06-12 00:00:00+00:00
+[2024-06-11T21:32:53.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.215 seconds
+[2024-06-11T21:33:23.890+0000] {processor.py:161} INFO - Started process (PID=524) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:33:23.905+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:33:23.920+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:33:23.911+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:33:24.074+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:33:24.254+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:33:24.246+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:33:24.412+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.557 seconds
+[2024-06-11T21:33:55.027+0000] {processor.py:161} INFO - Started process (PID=576) to work on /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:33:55.030+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_mb.py for tasks to queue
+[2024-06-11T21:33:55.034+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:33:55.034+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:33:55.094+0000] {processor.py:840} INFO - DAG(s) 'load_data_mb' retrieved from /opt/airflow/dags/load_data_mb.py
+[2024-06-11T21:33:55.217+0000] {logging_mixin.py:188} INFO - [2024-06-11T21:33:55.216+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-11T21:33:55.487+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_mb.py took 0.484 seconds

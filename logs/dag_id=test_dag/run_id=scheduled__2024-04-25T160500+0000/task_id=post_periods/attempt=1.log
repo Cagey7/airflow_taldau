@@ -1,0 +1,57 @@
+[2024-04-25T16:06:02.497+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-04-25T16:06:02.588+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_dag.post_periods scheduled__2024-04-25T16:05:00+00:00 [queued]>
+[2024-04-25T16:06:02.634+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_dag.post_periods scheduled__2024-04-25T16:05:00+00:00 [queued]>
+[2024-04-25T16:06:02.637+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-04-25T16:06:02.691+0000] {taskinstance.py:2327} INFO - Executing <Task(SimpleHttpOperator): post_periods> on 2024-04-25 16:05:00+00:00
+[2024-04-25T16:06:02.724+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'test_dag', 'post_periods', 'scheduled__2024-04-25T16:05:00+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmp5v4vu0zt']
+[2024-04-25T16:06:02.754+0000] {standard_task_runner.py:91} INFO - Job 61: Subtask post_periods
+[2024-04-25T16:06:02.755+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=379) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-04-25T16:06:02.756+0000] {standard_task_runner.py:63} INFO - Started process 380 to run task
+[2024-04-25T16:06:03.135+0000] {task_command.py:426} INFO - Running <TaskInstance: test_dag.post_periods scheduled__2024-04-25T16:05:00+00:00 [running]> on host f9a12f9b65d4
+[2024-04-25T16:06:03.910+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test_dag' AIRFLOW_CTX_TASK_ID='post_periods' AIRFLOW_CTX_EXECUTION_DATE='2024-04-25T16:05:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-25T16:05:00+00:00'
+[2024-04-25T16:06:03.915+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-04-25T16:06:04.017+0000] {http.py:169} INFO - Calling HTTP method
+[2024-04-25T16:06:04.157+0000] {base.py:84} INFO - Using connection ID 'taldau' for task execution.
+[2024-04-25T16:06:04.201+0000] {base.py:84} INFO - Using connection ID 'taldau' for task execution.
+[2024-04-25T16:11:11.237+0000] {http.py:199} ERROR - HTTP error: Internal Server Error
+[2024-04-25T16:11:11.739+0000] {http.py:200} ERROR - {"status":"error","error_code":504}
+[2024-04-25T16:11:11.783+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-04-25T16:11:12.650+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 197, in check_response
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http://5.63.114.131:8000/api/v1/loader/insert-all-periods/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/operators/http.py", line 166, in execute
+    return self.execute_sync(context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/operators/http.py", line 170, in execute_sync
+    response = self.hook.run(self.endpoint, self.data, self.headers, self.extra_options)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 187, in run
+    return self.run_and_check(session, prepped_request, extra_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 238, in run_and_check
+    self.check_response(response)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 201, in check_response
+    raise AirflowException(str(response.status_code) + ":" + response.reason)
+airflow.exceptions.AirflowException: 500:Internal Server Error
+[2024-04-25T16:11:12.892+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=test_dag, task_id=post_periods, execution_date=20240425T160500, start_date=20240425T160602, end_date=20240425T161112
+[2024-04-25T16:11:13.472+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 61 for task post_periods (500:Internal Server Error; 380)
+[2024-04-25T16:11:13.585+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-04-25T16:11:14.086+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-25T16:11:14.096+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

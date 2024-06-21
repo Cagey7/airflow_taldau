@@ -1,0 +1,23 @@
+[2024-05-14T10:00:47.901+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-14T10:00:47.987+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_703831 scheduled__2024-05-02T00:00:00+00:00 [queued]>
+[2024-05-14T10:00:48.012+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_703831 scheduled__2024-05-02T00:00:00+00:00 [queued]>
+[2024-05-14T10:00:48.014+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-05-14T10:00:48.056+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_index_id_703831> on 2024-05-02 00:00:00+00:00
+[2024-05-14T10:00:48.073+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'load_data_mb', 'load_index_id_703831', 'scheduled__2024-05-02T00:00:00+00:00', '--job-id', '504', '--raw', '--subdir', 'DAGS_FOLDER/load_data_mb.py', '--cfg-path', '/tmp/tmpmmaqlrcb']
+[2024-05-14T10:00:48.079+0000] {standard_task_runner.py:91} INFO - Job 504: Subtask load_index_id_703831
+[2024-05-14T10:00:48.085+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=254) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-14T10:00:48.087+0000] {standard_task_runner.py:63} INFO - Started process 255 to run task
+[2024-05-14T10:00:48.178+0000] {task_command.py:426} INFO - Running <TaskInstance: load_data_mb.load_index_id_703831 scheduled__2024-05-02T00:00:00+00:00 [running]> on host d933ead87eb5
+[2024-05-14T10:00:48.360+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data_mb' AIRFLOW_CTX_TASK_ID='load_index_id_703831' AIRFLOW_CTX_EXECUTION_DATE='2024-05-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-02T00:00:00+00:00'
+[2024-05-14T10:00:48.362+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-14T10:00:58.861+0000] {logging_mixin.py:188} INFO - {'index_name': 'Численность населения на начало периода', 'index_id': 703831, 'dic_names': ['Регионы', 'Тип местности и административное деление', 'По полу', 'Группы населения'], 'period_name': 'Год', 'info': 'ошибка талдау', 'error_code': 500}
+[2024-05-14T10:00:58.863+0000] {logging_mixin.py:188} INFO - {'index_name': 'Численность населения на начало периода', 'index_id': 703831, 'dic_names': ['Регионы', 'Национальности'], 'period_name': 'Год', 'info': 'ошибка талдау', 'error_code': 500}
+[2024-05-14T10:00:58.864+0000] {logging_mixin.py:188} INFO - {'index_name': 'Численность населения на начало периода', 'index_id': 703831, 'dic_names': ['Регионы', 'Тип местности и административное деление', 'По полу', 'Отдельные возрастные группы'], 'period_name': 'Год', 'info': 'ошибка талдау', 'error_code': 500}
+[2024-05-14T10:00:58.865+0000] {logging_mixin.py:188} INFO - {'index_name': 'Численность населения на начало периода', 'index_id': 703831, 'dic_names': ['Регионы', 'Тип местности и административное деление'], 'period_name': 'Месяц', 'info': 'ошибка талдау', 'error_code': 500}
+[2024-05-14T10:00:58.865+0000] {logging_mixin.py:188} INFO - {'index_name': 'Численность населения на начало периода', 'index_id': 703831, 'dic_names': ['Регионы', 'По полу'], 'period_name': 'Месяц', 'info': 'ошибка талдау', 'error_code': 500}
+[2024-05-14T10:00:58.866+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-14T10:00:58.867+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-14T10:00:58.883+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=load_data_mb, task_id=load_index_id_703831, execution_date=20240502T000000, start_date=20240514T100047, end_date=20240514T100058
+[2024-05-14T10:00:58.950+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-14T10:00:58.976+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-14T10:00:58.980+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

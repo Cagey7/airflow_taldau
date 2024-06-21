@@ -1,0 +1,12 @@
+[2024-05-04T23:46:48.551+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-04T23:46:48.736+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-05-02T00:00:00+00:00 [queued]>
+[2024-05-04T23:46:48.758+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-05-02T00:00:00+00:00 [queued]>
+[2024-05-04T23:46:48.759+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-05-04T23:46:48.810+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_index_id_702974> on 2024-05-02 00:00:00+00:00
+[2024-05-04T23:46:48.844+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=845) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-04T23:46:48.835+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'load_data_mb', 'load_index_id_702974', 'scheduled__2024-05-02T00:00:00+00:00', '--job-id', '458', '--raw', '--subdir', 'DAGS_FOLDER/load_data_mb.py', '--cfg-path', '/tmp/tmptgn1hyrd']
+[2024-05-04T23:46:48.850+0000] {standard_task_runner.py:63} INFO - Started process 846 to run task
+[2024-05-04T23:46:48.850+0000] {standard_task_runner.py:91} INFO - Job 458: Subtask load_index_id_702974
+[2024-05-04T23:46:48.976+0000] {task_command.py:426} INFO - Running <TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-05-02T00:00:00+00:00 [running]> on host d933ead87eb5
+[2024-05-04T23:46:49.230+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data_mb' AIRFLOW_CTX_TASK_ID='load_index_id_702974' AIRFLOW_CTX_EXECUTION_DATE='2024-05-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-02T00:00:00+00:00'
+[2024-05-04T23:46:49.235+0000] {taskinstance.py:430} INFO - ::endgroup::

@@ -1,0 +1,99 @@
+[2024-06-11T21:28:58.934+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-11T21:28:59.010+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-06-10T00:00:00+00:00 [queued]>
+[2024-06-11T21:28:59.030+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-06-10T00:00:00+00:00 [queued]>
+[2024-06-11T21:28:59.031+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-06-11T21:28:59.060+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_index_id_702974> on 2024-06-10 00:00:00+00:00
+[2024-06-11T21:28:59.073+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'load_data_mb', 'load_index_id_702974', 'scheduled__2024-06-10T00:00:00+00:00', '--job-id', '131', '--raw', '--subdir', 'DAGS_FOLDER/load_data_mb.py', '--cfg-path', '/tmp/tmpu7_rykrb']
+[2024-06-11T21:28:59.079+0000] {standard_task_runner.py:91} INFO - Job 131: Subtask load_index_id_702974
+[2024-06-11T21:28:59.083+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=247) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-06-11T21:28:59.085+0000] {standard_task_runner.py:63} INFO - Started process 248 to run task
+[2024-06-11T21:28:59.144+0000] {task_command.py:426} INFO - Running <TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-06-10T00:00:00+00:00 [running]> on host e6f094d2943c
+[2024-06-11T21:28:59.267+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data_mb' AIRFLOW_CTX_TASK_ID='load_index_id_702974' AIRFLOW_CTX_EXECUTION_DATE='2024-06-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-10T00:00:00+00:00'
+[2024-06-11T21:28:59.269+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-11T21:28:59.322+0000] {logging_mixin.py:188} INFO - Ошибка в коде или неверный json
+[2024-06-11T21:28:59.323+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-11T21:28:59.324+0000] {taskinstance.py:2892} ERROR - Task failed due to SystemExit(1)
+[2024-06-11T21:28:59.335+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=load_data_mb, task_id=load_index_id_702974, execution_date=20240610T000000, start_date=20240611T212859, end_date=20240611T212859
+[2024-06-11T21:28:59.355+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 131 for task load_index_id_702974 (Task failed due to SystemExit(1); 248)
+[2024-06-11T21:28:59.381+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-11T21:28:59.402+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-11T21:28:59.407+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-11T21:30:19.777+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-11T21:30:19.852+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-06-10T00:00:00+00:00 [queued]>
+[2024-06-11T21:30:19.875+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-06-10T00:00:00+00:00 [queued]>
+[2024-06-11T21:30:19.877+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-06-11T21:30:19.915+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_index_id_702974> on 2024-06-10 00:00:00+00:00
+[2024-06-11T21:30:19.931+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=347) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-06-11T21:30:19.929+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'load_data_mb', 'load_index_id_702974', 'scheduled__2024-06-10T00:00:00+00:00', '--job-id', '170', '--raw', '--subdir', 'DAGS_FOLDER/load_data_mb.py', '--cfg-path', '/tmp/tmp61lrvvi7']
+[2024-06-11T21:30:19.935+0000] {standard_task_runner.py:63} INFO - Started process 348 to run task
+[2024-06-11T21:30:19.935+0000] {standard_task_runner.py:91} INFO - Job 170: Subtask load_index_id_702974
+[2024-06-11T21:30:20.052+0000] {task_command.py:426} INFO - Running <TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-06-10T00:00:00+00:00 [running]> on host e6f094d2943c
+[2024-06-11T21:30:20.321+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data_mb' AIRFLOW_CTX_TASK_ID='load_index_id_702974' AIRFLOW_CTX_EXECUTION_DATE='2024-06-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-10T00:00:00+00:00'
+[2024-06-11T21:30:20.323+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-11T21:30:20.394+0000] {logging_mixin.py:188} INFO - Ошибка в коде или неверный json
+[2024-06-11T21:30:20.395+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-11T21:30:20.397+0000] {taskinstance.py:2892} ERROR - Task failed due to SystemExit(1)
+[2024-06-11T21:30:20.409+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=load_data_mb, task_id=load_index_id_702974, execution_date=20240610T000000, start_date=20240611T213019, end_date=20240611T213020
+[2024-06-11T21:30:20.427+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 170 for task load_index_id_702974 (Task failed due to SystemExit(1); 348)
+[2024-06-11T21:30:20.473+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-11T21:30:20.499+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-11T21:30:20.502+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-11T21:31:08.254+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-11T21:31:08.699+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-06-10T00:00:00+00:00 [queued]>
+[2024-06-11T21:31:08.727+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-06-10T00:00:00+00:00 [queued]>
+[2024-06-11T21:31:08.728+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-06-11T21:31:08.781+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_index_id_702974> on 2024-06-10 00:00:00+00:00
+[2024-06-11T21:31:08.797+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'load_data_mb', 'load_index_id_702974', 'scheduled__2024-06-10T00:00:00+00:00', '--job-id', '181', '--raw', '--subdir', 'DAGS_FOLDER/load_data_mb.py', '--cfg-path', '/tmp/tmpta_1l69p']
+[2024-06-11T21:31:08.807+0000] {standard_task_runner.py:91} INFO - Job 181: Subtask load_index_id_702974
+[2024-06-11T21:31:08.810+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=390) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-06-11T21:31:08.813+0000] {standard_task_runner.py:63} INFO - Started process 391 to run task
+[2024-06-11T21:31:09.016+0000] {task_command.py:426} INFO - Running <TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-06-10T00:00:00+00:00 [running]> on host e6f094d2943c
+[2024-06-11T21:31:09.472+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data_mb' AIRFLOW_CTX_TASK_ID='load_index_id_702974' AIRFLOW_CTX_EXECUTION_DATE='2024-06-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-10T00:00:00+00:00'
+[2024-06-11T21:31:09.481+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-11T21:31:09.613+0000] {logging_mixin.py:188} INFO - Ошибка в коде или неверный json
+[2024-06-11T21:31:09.614+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-11T21:31:09.615+0000] {taskinstance.py:2892} ERROR - Task failed due to SystemExit(1)
+[2024-06-11T21:31:09.644+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=load_data_mb, task_id=load_index_id_702974, execution_date=20240610T000000, start_date=20240611T213108, end_date=20240611T213109
+[2024-06-11T21:31:09.674+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 181 for task load_index_id_702974 (Task failed due to SystemExit(1); 391)
+[2024-06-11T21:31:09.726+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-11T21:31:09.790+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-11T21:31:09.798+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-11T21:41:14.862+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-11T21:41:15.131+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-06-10T00:00:00+00:00 [queued]>
+[2024-06-11T21:41:15.161+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-06-10T00:00:00+00:00 [queued]>
+[2024-06-11T21:41:15.162+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-06-11T21:41:15.203+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_index_id_702974> on 2024-06-10 00:00:00+00:00
+[2024-06-11T21:41:15.243+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=201) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-06-11T21:41:15.239+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'load_data_mb', 'load_index_id_702974', 'scheduled__2024-06-10T00:00:00+00:00', '--job-id', '238', '--raw', '--subdir', 'DAGS_FOLDER/load_data.py', '--cfg-path', '/tmp/tmpf28c7bpa']
+[2024-06-11T21:41:15.250+0000] {standard_task_runner.py:63} INFO - Started process 202 to run task
+[2024-06-11T21:41:15.251+0000] {standard_task_runner.py:91} INFO - Job 238: Subtask load_index_id_702974
+[2024-06-11T21:41:15.837+0000] {task_command.py:426} INFO - Running <TaskInstance: load_data_mb.load_index_id_702974 scheduled__2024-06-10T00:00:00+00:00 [running]> on host 8195540d7f15
+[2024-06-11T21:41:16.610+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data_mb' AIRFLOW_CTX_TASK_ID='load_index_id_702974' AIRFLOW_CTX_EXECUTION_DATE='2024-06-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-10T00:00:00+00:00'
+[2024-06-11T21:41:16.612+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-11T21:41:16.806+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-11T21:41:16.808+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/load_data.py", line 19, in load_index
+    print(response.json()["info"])
+          ~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'info'
+[2024-06-11T21:41:16.863+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=load_data_mb, task_id=load_index_id_702974, execution_date=20240610T000000, start_date=20240611T214115, end_date=20240611T214116
+[2024-06-11T21:41:16.916+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 238 for task load_index_id_702974 ('info'; 202)
+[2024-06-11T21:41:16.937+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-11T21:41:17.026+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-11T21:41:17.035+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

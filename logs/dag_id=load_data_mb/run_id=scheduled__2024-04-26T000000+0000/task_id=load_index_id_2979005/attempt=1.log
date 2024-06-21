@@ -1,0 +1,79 @@
+[2024-04-27T19:15:43.270+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-04-27T19:15:43.560+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_2979005 scheduled__2024-04-26T00:00:00+00:00 [queued]>
+[2024-04-27T19:15:43.603+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_2979005 scheduled__2024-04-26T00:00:00+00:00 [queued]>
+[2024-04-27T19:15:43.606+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 4
+[2024-04-27T19:15:43.653+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_index_id_2979005> on 2024-04-26 00:00:00+00:00
+[2024-04-27T19:15:43.663+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'load_data_mb', 'load_index_id_2979005', 'scheduled__2024-04-26T00:00:00+00:00', '--job-id', '180', '--raw', '--subdir', 'DAGS_FOLDER/python_op.py', '--cfg-path', '/tmp/tmpyr0i7x5l']
+[2024-04-27T19:15:43.667+0000] {standard_task_runner.py:91} INFO - Job 180: Subtask load_index_id_2979005
+[2024-04-27T19:15:43.671+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=529) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-04-27T19:15:43.672+0000] {standard_task_runner.py:63} INFO - Started process 530 to run task
+[2024-04-27T19:15:43.772+0000] {task_command.py:426} INFO - Running <TaskInstance: load_data_mb.load_index_id_2979005 scheduled__2024-04-26T00:00:00+00:00 [running]> on host d933ead87eb5
+[2024-04-27T19:15:44.066+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data_mb' AIRFLOW_CTX_TASK_ID='load_index_id_2979005' AIRFLOW_CTX_EXECUTION_DATE='2024-04-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-26T00:00:00+00:00'
+[2024-04-27T19:15:44.069+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-04-27T19:15:52.906+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-04-27T19:15:52.908+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/python_op.py", line 20, in load_index
+    for status in response.text["info"]:
+                  ~~~~~~~~~~~~~^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+[2024-04-27T19:15:52.938+0000] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=load_data_mb, task_id=load_index_id_2979005, execution_date=20240426T000000, start_date=20240427T191543, end_date=20240427T191552
+[2024-04-27T19:15:52.968+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 180 for task load_index_id_2979005 (string indices must be integers, not 'str'; 530)
+[2024-04-27T19:15:53.007+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-04-27T19:15:53.038+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-27T19:15:53.046+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-04-27T19:17:03.086+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-04-27T19:17:03.179+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_2979005 scheduled__2024-04-26T00:00:00+00:00 [queued]>
+[2024-04-27T19:17:03.203+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_mb.load_index_id_2979005 scheduled__2024-04-26T00:00:00+00:00 [queued]>
+[2024-04-27T19:17:03.205+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 4
+[2024-04-27T19:17:03.242+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_index_id_2979005> on 2024-04-26 00:00:00+00:00
+[2024-04-27T19:17:03.299+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'load_data_mb', 'load_index_id_2979005', 'scheduled__2024-04-26T00:00:00+00:00', '--job-id', '185', '--raw', '--subdir', 'DAGS_FOLDER/python_op.py', '--cfg-path', '/tmp/tmpszio3s6j']
+[2024-04-27T19:17:03.309+0000] {standard_task_runner.py:91} INFO - Job 185: Subtask load_index_id_2979005
+[2024-04-27T19:17:03.335+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=566) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-04-27T19:17:03.339+0000] {standard_task_runner.py:63} INFO - Started process 567 to run task
+[2024-04-27T19:17:03.702+0000] {task_command.py:426} INFO - Running <TaskInstance: load_data_mb.load_index_id_2979005 scheduled__2024-04-26T00:00:00+00:00 [running]> on host d933ead87eb5
+[2024-04-27T19:17:03.988+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data_mb' AIRFLOW_CTX_TASK_ID='load_index_id_2979005' AIRFLOW_CTX_EXECUTION_DATE='2024-04-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-26T00:00:00+00:00'
+[2024-04-27T19:17:03.990+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-04-27T19:17:18.501+0000] {logging_mixin.py:188} INFO - <Response [201]>
+[2024-04-27T19:17:18.502+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-04-27T19:17:18.504+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/python_op.py", line 21, in load_index
+    for status in response.text["info"]:
+                  ~~~~~~~~~~~~~^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+[2024-04-27T19:17:18.526+0000] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=load_data_mb, task_id=load_index_id_2979005, execution_date=20240426T000000, start_date=20240427T191703, end_date=20240427T191718
+[2024-04-27T19:17:18.550+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 185 for task load_index_id_2979005 (string indices must be integers, not 'str'; 567)
+[2024-04-27T19:17:18.561+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-04-27T19:17:18.585+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-27T19:17:18.590+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
